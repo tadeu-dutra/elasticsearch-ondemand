@@ -2,7 +2,7 @@
 
 # Module 3: Search
 
-## 1. Full Text Queries
+## 3.1 Full Text Queries
 
 In this lesson, you will learn how to search using full text queries. You will also learn how a score is calculated for each document that is a hit and by default, the ‘hits’ in the query response are sorted by this score. Watch the video below to get started.
 
@@ -10,6 +10,8 @@ By the end of this lesson, you will be able to:
 
 - Define a query that searches for one or more text fields using the Query DSL
 - Identify how the query response is affected byt the document score
+
+Ex: match, match_phrase, multi_match, query_string, ...
 
 ```
 **QUESTION 1:** The way the multi_match query is executed depends on the type parameter. For example, setting “type”: “phrase” runs a match_phrase.
@@ -22,8 +24,41 @@ By the end of this lesson, you will be able to:
 **ANSWER:** By default, 10 hits are returned. You can change this using the size parameter.
 ```
 
-## 2. Term-level Queries
+## 3.2 Term-level Queries
 
 In this lesson, you’ll learn how to define term-level queries that return an exact match of the original string as it occurs in the documents. You will also implement queries to search for numbers, dates, and IPs by creating ranges. Finally, at the end of this lesson, you will perform a sync search to handle long-running searches. Watch the video below to learn more.
 
+By the end of this lesson, you will be able to:
 
+- Define term-level queries to find documents based on exact terms
+- Perform an async search to handle long-running searches
+
+Ex: term, range, exists, fuzzy, regexp, wildcard, ids, ...
+
+```
+**QUESTION 1:** The Query DSL can only be used for full text queries.
+**ANSWER:** False. The Query DSL enables you to do any kind of query.
+
+**QUESTION 2:** In an asynchronous search, is_partial is always set to true while the query is being executed.
+**ANSWER:** True. While the query is being executed, is_partial is set to true.
+
+**QUESTION 3:** In a range query, you can set up open-ended rangeds such as "price less than $50" or dates greater than or equal to January 1st, 2025.
+**ANSWER:** True. Range queries allow you to create exact, relative, or open-ended ranges.
+```
+
+## 3.3 Combining Queries
+
+In this lesson, you'll learn how to create more complex search requests using the bool query to combine one or more Boolean clauses.
+
+By the end of this lesson, you'll be able to:
+
+- Combine multiple queries using one or more boolean clauses
+- Identify which boolean clauses contribute to a document's score
+- Describe the importance of using filters in your queries
+
+
+```
+**QUESTION 1:** The Query DSL can only be used for full text queries.
+**ANSWER:** False. The Query DSL enables you to do any kind of query.
+
+```
