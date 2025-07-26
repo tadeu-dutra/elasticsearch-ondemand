@@ -1124,11 +1124,9 @@ GET kibana_sample_data_ecommerce/_search
 }
 ```
 
-# 1.2 Index Operations
+# Review
 
-In this lab, you will learn how to get data in, create an index, and create a data view by performing the following tasks:
-
-    - From the Console, write, index, retrieve and delete JSON documents, and delete an index
-    - Use the file upload mechanism in Kibana to import blogs
-    - From Stack Management, create a data view
+- Elasticsearch is the core of the Elastic Stack and is used to store, search, and analyze data.
+- A node is a single instance of Elasticsearch.
+- You can use Kibana Discover to query and filter your data.
 
