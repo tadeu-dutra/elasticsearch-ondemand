@@ -1124,6 +1124,15 @@ GET kibana_sample_data_ecommerce/_search
 }
 ```
 
+# Summary
+
+In this lab, you examined the eCommerce sample data that ships with Kibana by performing the following tasks:
+
+    Add a dataset in Kibana
+    Examine the indexed documents using Discover
+    View the pre-set visualizations in a sample dataset Dashboard
+    From the Console in Dev Tools, send HTTP requests to Elasticsearch and view the responses
+
 # Review
 
 - Elasticsearch is the core of the Elastic Stack and is used to store, search, and analyze data.
