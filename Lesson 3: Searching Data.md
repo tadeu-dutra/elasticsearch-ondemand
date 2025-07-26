@@ -305,10 +305,17 @@ RESPONSE:
 ```
 
 # Summary
+
 In this lab, you explored different ways to retrieve documents from the blogs index by performing the following tasks:
 
     Compare the number of results for various Discover queries
     Create a request with Query DSL that matches all documents, giving them all a _score of 1
     Create a request with Query DSL that retrieves the date when the first blog was published
     Create a request with ES|QL that retrieves the top ten authors from the blogs index
+
+# Review
+
+- SQL, Lucene, EQL and KQL query languages are compatible with Elasticsearch but only KQL and Lucene can be used in Kibana’s query bar. Note that ES|QL also uses the query bar if it is explicitly selected.
+- You do not need to have an aggregation included within a search request.
+- An ES|QL query is composed of a series of commands that are processed sequentially; where the output of one operation becomes the input for the next.
 
