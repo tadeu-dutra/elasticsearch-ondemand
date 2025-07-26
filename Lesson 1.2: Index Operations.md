@@ -205,6 +205,13 @@ DELETE my_blogs
 }
 ```
 
+# Summary
+
+In this lab, you learned how to get data in, create an index, and create a data view by performing the following tasks:
+
+    From the Console, write, index, retrieve and delete JSON documents, and delete an index
+    Use the file upload mechanism in Kibana to import blogs
+    From Stack Management, create a data view
 
 
 # Review
