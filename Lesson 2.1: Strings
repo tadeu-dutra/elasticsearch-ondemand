@@ -1,0 +1,9 @@
+# Lesson 2.1: Strings
+
+In this lesson, you’ll learn how Elasticsearch handles strings in your documents and how text is analyzed using an analyzer. You will also learn the differences between two data types: Strings vs Keywords.
+
+# Review
+
+- By default, text strings are analyzed by Elasticsearch at query time.
+- Unlike text strings, keywords are not analyzed.
+- The standard analyzer is the default analyzer which is used if no other analyzer is specified.
