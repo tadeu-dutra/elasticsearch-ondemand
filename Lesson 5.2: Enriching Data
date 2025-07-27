@@ -1,0 +1,12 @@
+# 5.2: Enriching Data
+
+In this lesson, you’ll learn about different use cases for enriching data. One particular use case is how to denormalize data into a single index in order to improve the response time of a query. In this lesson, you will also learn how to denormalize data using the enrich processor in an ingest node pipeline.
+
+
+
+
+# Review
+
+- Denormalizing your data enables you to quickly and easily search across multiple fields in a single query without joining datasets.
+- How do you create an enrich index? Create an enrich policy then execute it. The enriched index is created from a policy. The enriched index can then be used in an ingest pipeline in the enrich processor to add detailed data to incoming documents.
+- Once created, you can’t update or change an enrich policy. Create and execute a new enrich policy.
